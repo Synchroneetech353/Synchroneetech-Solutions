@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERP Solutions Website</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f6f6f6;
+        }
+
+        /* Navigation */
+        nav {
+            background: #0d47a1;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px 40px;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav .logo {
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px;
+            background: white;
+            margin: 20px auto;
+            width: 90%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #0d47a1;
+            margin-bottom: 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .box {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 6px;
+            border-left: 5px solid #0d47a1;
+        }
+
+        /* Contact Form */
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        form button {
+            margin-top: 15px;
+            background: #0d47a1;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background: #08306b;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">ERP Solutions</div>
+        <ul>
+            <li onclick="scrollToSection('services')">Services</li>
+            <li onclick="scrollToSection('industries')">Industries</li>
+            <li onclick="scrollToSection('erp')">ERP Solutions</li>
+            <li onclick="scrollToSection('about')">About Us</li>
+            <li onclick="scrollToSection('contact')">Contact</li>
+        </ul>
+    </nav>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="grid">
+            <div class="box">ERPNext Implementation & Support</div>
+            <div class="box">ERP System Audits</div>
+            <div class="box">SAP Upgrades & Support</div>
+            <div class="box">SAP Training</div>
+            <div class="box">Project Management Services</div>
+            <div class="box">Business Process Reengineering</div>
+            <div class="box">Consulting & Staffing Services</div>
+        </div>
+    </section>
+
+    <!-- Industries Section -->
+    <section id="industries">
+        <h2>Industries We Support</h2>
+        <div class="grid">
+            <div class="box">Manufacturing</div>
+            <div class="box">Textile</div>
+            <div class="box">Automobile</div>
+            <div class="box">Trading</div>
+            <div class="box">Retail</div>
+            <div class="box">Education</div>
+            <div class="box">Non-Profit</div>
+            <div class="box">E-Commerce</div>
+            <div class="box">Healthcare</div>
+        </div>
+    </section>
+
+    <!-- ERP Solutions Section -->
+    <section id="erp">
+        <h2>ERP Solutions</h2>
+
+        <div class="grid">
+            <div class="box">ERPNext</div>
+            <div class="box">CRM</div>
+            <div class="box">Sales</div>
+            <div class="box">Stock</div>
+            <div class="box">Manufacturing</div>
+            <div class="box">Projects</div>
+            <div class="box">Accounts</div>
+            <div class="box">HR & Payroll</div>
+            <div class="box">Support Services</div>
+            <div class="box">Integration</div>
+            <div class="box">GST</div>
+            <div class="box">Custom Developments</div>
+            <div class="box">Project Management</div>
+            <div class="box">Project Systems</div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>
+            We provide professional ERP implementation, support, consulting, and custom development services 
+            for businesses across multiple industries. Our expertise includes ERPNext, SAP, CRM, HRMS, and 
+            enterprise automation solutions.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="text" placeholder="Contact Number">
+            <textarea rows="4" placeholder="Your Message"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+
+</body>
+</html>
