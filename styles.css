@@ -28,6 +28,22 @@
   min-width: 240px;
   transition: all 0.2s ease;
 }
+/* Main menu link */
+.navbar .nav-link {
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover highlight (NO text color change) */
+.navbar .nav-link:hover,
+.navbar .nav-link.active {
+  background-color:#8fcdf1;   /* image मधला blue */
+}
+
+
+
+
 
 .dropdown-item {
   padding: 10px 20px;

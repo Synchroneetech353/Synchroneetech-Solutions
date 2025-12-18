@@ -1,83 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us — Synchroneetech Solutions</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Synchroneetech Solutions</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+<link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
 
-  <!-- NAVIGATION -->
-  <nav>
-    <div class="logo">Synchroneetech Solutions</div>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="industries.html">Industries</a></li>
-      <li><a href="about.html" class="active">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
 
-  <!-- HEADER -->
-  <header class="hero" style="height:45vh; background:url('https://via.placeholder.com/1600x520') center/cover no-repeat;">
-    <div class="hero-content">
-      <h1>About Synchroneetech Solutions</h1>
-    </div>
-  </header>
+    <a class="navbar-brand" href="#">
+      <img src="asset/logo.png" width="160">
+    </a>
 
-  <!-- ABOUT SECTION -->
-  <section class="section">
-    <h2>Who We Are</h2>
-    <div class="about-text">
-      <p>
-        Synchroneetech Solutions is a leading provider of ERP, web development, IT consulting, and 
-        enterprise digital transformation services. We deliver robust, scalable, and future-ready 
-        solutions that help businesses streamline operations, automate workflows, and unlock growth.
-      </p>
-      <p>
-        Our team consists of highly skilled professionals with expertise in ERP implementation, 
-        software development, cloud solutions, and business process optimization. We work closely 
-        with clients to ensure that every solution aligns with their unique challenges and goals.
-      </p>
-    </div>
-  </section>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-  <!-- MISSION & VALUES -->
-  <section class="section">
-    <h2>Our Mission & Values</h2>
-    <div class="about-text">
-      <p>
-        Our mission is to empower organizations with intelligent and reliable technological 
-        solutions that enhance efficiency, improve productivity, and enable smarter decision making.
-      </p>
-      <ul>
-        <li>✔Customer-Centric Approach</li>
-        <li>✔Result-Driven Solutions</li>
-        <li>✔ Uncompromised Quality</li>
-        <li>✔ Long-Term Partnerships</li>
-        <li>✔ Innovation & Continuous Improvement</li>
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item">
+          <a class="nav-link " href="Index.html">Home</a>
+        </li>
+
+        <!-- SERVICES -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Services</a>
+          <ul class="dropdown-menu">
+             <li><a class="dropdown-item" href="Services/services1.html">ERPNext Implementation & Support</a></li>
+            <li><a class="dropdown-item" href="Services/services2.html">ERP System Audits</a></li>
+            <li><a class="dropdown-item" href="Services/services3.html">SAP Upgrade & Support</a></li>
+            <li><a class="dropdown-item" href="Services/services4.html">SAP end user trainings</a></li>
+            <li><a class="dropdown-item" href="Services/services5.html">Dashboard Development</a></li>
+            <li><a class="dropdown-item" href="Services/services6.html">Project Management Services</a></li>
+            <li><a class="dropdown-item" href="Services/services7.html">Business Process Re-engineering</a></li>
+            <li><a class="dropdown-item" href="Services/services8.html">Consulting & Staffing Services</a></li>
+          </ul>
+        </li>
+
+        <!-- INDUSTRIES -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#">Industries Supported</a>
+          <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="industuries_supportes/industries1.html">Manufacturing</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries2.html">Textile</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries3.html">Trading</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries4.html">IT Industries</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries5.html">Automobile</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries6.html">Education</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries7.html">Retail</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries8.html">Non Profit</a></li>
+            <li><a class="dropdown-item" href="industuries_supportes/industries9.html">Healthcare</a></li>
+          </ul>
+        </li>
+
+       <!-- ERP Solutions -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">ERP Solutions</a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">ERPNext</a>
+              <ul class="dropdown-menu">
+               <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext1.html">CRM</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext2.html">Sales</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext3.html">Buying</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext4.html">Stock</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext5.html">Manufacturing</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext6.html">Projects</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext7.html">Accounts</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext8.html">HR & Payroll</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext9.html">Support Services</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext10.html">Integration</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext11.html">GST</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/ERPNext/ERPNext12.html">Custom Developments</a></li>
+              </ul>
+            </li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item dropdown-toggle" href="#">SAP</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ERP_Solutions/SAP/SAP1.html">Project Management</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/SAP/SAP2.html">Project Systems</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/SAP/SAP3.html">Plan Maintainance</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/SAP/SAP4.html">Basis Support</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/SAP/SAP5.html">EWM</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/SAP/SAP6.html">DMS</a></li>
+                <li><a class="dropdown-item" href="ERP_Solutions/SAP/SAP7.html">S4 Hana Upgrades</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+
+        <!-- ABOUT -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="about.html">About</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Company Profile</a></li>
+            <li><a class="dropdown-item" href="#">ERP</a></li>
+            <li><a class="dropdown-item" href="#">SAP</a></li>
+          </ul>
+        </li>
+
+        <!-- CONTACT -->
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html" >Contact</a>
+        </li>
+        
+        <!-- Request For Demo -->
+        <li class="nav-item">
+          <a class="nav-link active" href="Request for demo.html">Request for Demo</a>
+        </li>
+
       </ul>
     </div>
-  </section>
+    
 
-  <!-- TEAM HIGHLIGHT -->
-  <section class="section">
-    <h2>Why Choose Us</h2>
-    <div class="about-text">
-      <p>
-        With a strong portfolio, industry expertise, and a passion for excellence, we ensure that 
-        every client receives the best possible experience. From initial consultation to deployment 
-        and long-term support, Synchroneetech Solutions is committed to delivering value at every step.
-      </p>
+  </div>
+</nav>
+<header class="hero">
+<div class="container-fluid">
+    <div class="row">
+        <!-- Left Side - Text -->
+        <div class="col-md-6 left-text">
+            <div>
+                <h1>About Us</h1>
+                <p>
+                 
+                  
+We are a professional IT consulting and ERP implementation firm specializing in delivering structured, scalable, and business-driven digital transformation solutions. Our core strength lies in combining modern ERP platforms with proven enterprise practices to help organizations achieve operational excellence and sustainable growth.
+
+With over 4 years of focused experience in ERPNext implementation and consulting, we deliver end-to-end ERPNext programs encompassing business process assessment, solution design, configuration, customization, integration, data migration, user enablement, and post-go-live support. Our ERPNext engagements are executed with a strong emphasis on governance, compliance, and performance, ensuring alignment with organizational objectives.
+
+Our consulting capability is further strengthened by 15+ years of SAP consulting and project management experience, spanning SAP ECC and SAP S/4HANA landscapes. This extensive SAP background enables us to apply enterprise-grade methodologies, best practices, and risk-controlled delivery models across all engagements, regardless of platform.
+
+We partner closely with leadership teams and stakeholders to deliver measurable outcomes through process optimization, system standardization, and operational transparency. Whether supporting enterprises with SAP-led transformation initiatives or enabling growing organizations with ERPNext, we provide reliable, future-ready ERP solutions designed to scale with business needs.
+
+
+                </p>
+             </div>
+        </div>
+
+        <!-- Right Side - Image -->
+        <div class="col-md-6 right-image p-0">
+            <img src="asset/H7.png" alt="services Image" >
+        </div>
     </div>
-  </section>
+</div>
+</header>
 
-  <!-- FOOTER -->
-  <footer>
-    © 2025 Synchroneetech Solutions — All Rights Reserved.
-  </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+// Mobile click toggle for nested submenu
+document.querySelectorAll('.dropdown-submenu .dropdown-toggle').forEach(function(element){
+  element.addEventListener('click', function (e) {
+    if(window.innerWidth < 992){ // Mobile only
+      e.preventDefault();
+      e.stopPropagation();
 
+      let parentMenu = this.closest('.dropdown-menu');
+      parentMenu.querySelectorAll('.dropdown-menu.show').forEach(function(openMenu){
+        if(openMenu !== element.nextElementSibling){
+          openMenu.classList.remove('show');
+        }
+      });
+
+      let submenu = this.nextElementSibling;
+      if(submenu){
+        submenu.classList.toggle('show');
+      }
+    }
+  });
+});
+</script>
 </body>
 </html>
